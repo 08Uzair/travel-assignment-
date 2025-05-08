@@ -194,7 +194,10 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
                 isActive ? "bg-gray-200" : "bg-black/60"
               }`}
             >
-              <Clock size={16} className="text-[#313DDF]" />
+              <Clock
+                size={16}
+                className={` ${isActive ? "text-[#313DDF]" : "text-lime-400 "}`}
+              />
               <div>
                 <p className="text-[12px] font-semibold">8 Days</p>
                 <p className="text-[10px] font-normal text-gray-500">
@@ -209,7 +212,7 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
                 isActive ? "bg-gray-200" : "bg-black/60"
               }`}
             >
-              <Users size={16} className="text-[#313DDF]" />
+              <Users size={16}  className={` ${isActive ? "text-[#313DDF]" : "text-lime-400 "}`} />
               <div>
                 <p className="font-semibold text-[12px]">4 (2M,2F)</p>
                 <p className="text-[10px] font-normal text-gray-500">
@@ -224,7 +227,7 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
                 isActive ? "bg-gray-200" : "bg-black/60"
               }`}
             >
-              <List size={16} className="text-[#313DDF]" />
+              <List size={16}   className={` ${isActive ? "text-[#313DDF]" : "text-lime-400 "}`}/>
               <div>
                 <p className="font-semibold text-[12px]">14</p>
                 <p className="text-[10px] font-normal text-gray-500">
