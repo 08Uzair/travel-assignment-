@@ -72,15 +72,25 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
 
   return (
     <div
-      className={`${isActive ? "bg-white text-black" : "bg-black text-white"} min-h-screen pb-20`}
+      className={`${
+        isActive ? "bg-white text-black" : "bg-black text-white"
+      } min-h-screen pb-20`}
     >
       {/* TRIP HEADER */}
       <div className="flex justify-between items-center px-4 py-3 relative">
         <div>
-          <h2 className={`${isActive ? "text-black" : "text-white"} font-semibold text-lg`}>
+          <h2
+            className={`${
+              isActive ? "text-black" : "text-white"
+            } font-semibold text-lg`}
+          >
             Hello {userName}!
           </h2>
-          <p className={`${isActive ? "text-gray-600" : "text-gray-400"} text-sm`}>
+          <p
+            className={`${
+              isActive ? "text-gray-600" : "text-gray-400"
+            } text-sm`}
+          >
             Ready for the trip?
           </p>
         </div>
@@ -131,7 +141,11 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
 
       {/* UPCOMING TRIP */}
       <div className="px-4 max-w-sm mx-auto">
-        <p className={`${isActive ? "text-gray-600" : "text-gray-400"} text-sm mb-1`}>
+        <p
+          className={`${
+            isActive ? "text-gray-600" : "text-gray-400"
+          } text-sm mb-1`}
+        >
           Your Upcoming Trip
         </p>
         <div
@@ -149,13 +163,23 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
           />
 
           {/* Top Left Text */}
-          <div className="absolute top-4 left-4" style={{ color: isActive ? "black" : "white" }}>
+          <div
+            className="absolute top-4 left-4"
+            style={{ color: isActive ? "black" : "white" }}
+          >
             <h3 className="text-[40px] font-black tracking-wide">TOKYO</h3>
-            <p className={`text-sm font-light" ${isActive ? "black" : "white"}`}>27.01.2025 - 02.02.2025</p>
+            <p
+              className={`text-sm font-light" ${isActive ? "black" : "white"}`}
+            >
+              27.01.2025 - 02.02.2025
+            </p>
           </div>
 
           {/* Top Right Arrow */}
-          <div className="absolute top-4 right-4 text-lg" style={{ color: isActive ? "black" : "white" }}>
+          <div
+            className="absolute top-4 right-4 text-lg"
+            style={{ color: isActive ? "black" : "white" }}
+          >
             ↗
           </div>
 
@@ -173,7 +197,9 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
               <Clock size={16} className="text-[#313DDF]" />
               <div>
                 <p className="text-[12px] font-semibold">8 Days</p>
-                <p className="text-[10px] font-normal text-gray-500">Duration</p>
+                <p className="text-[10px] font-normal text-gray-500">
+                  Duration
+                </p>
               </div>
             </div>
 
@@ -186,7 +212,9 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
               <Users size={16} className="text-[#313DDF]" />
               <div>
                 <p className="font-semibold text-[12px]">4 (2M,2F)</p>
-                <p className="text-[10px] font-normal text-gray-500">Group Size</p>
+                <p className="text-[10px] font-normal text-gray-500">
+                  Group Size
+                </p>
               </div>
             </div>
 
@@ -199,7 +227,9 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
               <List size={16} className="text-[#313DDF]" />
               <div>
                 <p className="font-semibold text-[12px]">14</p>
-                <p className="text-[10px] font-normal text-gray-500">Activities</p>
+                <p className="text-[10px] font-normal text-gray-500">
+                  Activities
+                </p>
               </div>
             </div>
           </div>
@@ -223,19 +253,47 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
               See all
             </button>
           </div>
-          <p className="text-sm mb-2 pl-2">{isActive ? "text-black" : "text-gray-200"}</p>
+          <p className="text-sm mb-2 pl-2">
+            {isActive ? "text-black" : "text-gray-200"}
+          </p>
           <p className="text-sm mb-2 pl-2">26.01.2025, 10:50 am</p>
           <div className="flex items-center justify-between">
             <div className="pl-2">
-              <h4 className={`font-bold ${isActive ? "text-black" : "text-white"}`}>DEL</h4>
-              <p className={isActive ? "text-gray-700 text-xs" : "text-gray-200 text-xs"}>
+              <h4
+                className={`font-bold ${
+                  isActive ? "text-black" : "text-white"
+                }`}
+              >
+                DEL
+              </h4>
+              <p
+                className={
+                  isActive ? "text-gray-700 text-xs" : "text-gray-200 text-xs"
+                }
+              >
                 Delhi, India
               </p>
             </div>
-            <Image src={arr} width={30} height={30} alt="flight" className="mx-2" />
+            <Image
+              src={arr}
+              width={30}
+              height={30}
+              alt="flight"
+              className="mx-2"
+            />
             <div>
-              <h4 className={`font-bold ${isActive ? "text-black" : "text-white"}`}>NRT</h4>
-              <p className={isActive ? "text-gray-700 text-xs" : "text-gray-200 text-xs"}>
+              <h4
+                className={`font-bold ${
+                  isActive ? "text-black" : "text-white"
+                }`}
+              >
+                NRT
+              </h4>
+              <p
+                className={
+                  isActive ? "text-gray-700 text-xs" : "text-gray-200 text-xs"
+                }
+              >
                 Narita, Tokyo
               </p>
             </div>
@@ -252,7 +310,11 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
 
       {/* Accommodation */}
       <div className="px-4 mt-4">
-        <h3 className={`${isActive ? "text-black" : "text-white"} font-medium mb-2`}>
+        <h3
+          className={`${
+            isActive ? "text-black" : "text-white"
+          } font-medium mb-2`}
+        >
           Accommodation
         </h3>
         <div className="flex gap-4 overflow-x-scroll no-scrollbar">
@@ -269,30 +331,53 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
                   alt={item.name}
                   width={700}
                   height={700}
-                  className="rounded-lg w-full object-cover !h-[38vh]"
+                  className="rounded-lg w-full object-cover !h-[35vh]"
                 />
                 <span
                   className={`absolute top-2 left-2 text-[10px] font-medium px-2 py-[2px] rounded-md flex items-center gap-1 z-10 ${
-                    isActive ? "bg-blue-400 text-black" : "bg-blue-600 text-white"
+                    isActive
+                      ? "bg-blue-400 text-black"
+                      : "bg-blue-600 text-white"
                   }`}
                 >
-                  <span className="text-xs">⭐</span> {item.rating} {item.ratingLabel}
+                  <span className="text-xs">⭐</span> {item.rating}{" "}
+                  {item.ratingLabel}
                 </span>
               </div>
               <div className="absolute bottom-3 p-2">
-                <h4 className={`text-sm font-semibold ${isActive ? "text-black" : "text-white"}`}>
+                <h4
+                  className={`text-sm font-semibold ${
+                    isActive ? "text-black" : "text-white"
+                  }`}
+                >
                   {item.name}
                 </h4>
 
-                <p className={`text-xs font-medium ${isActive ? "text-gray-700" : "text-gray-300"}`}>
-                  Check in: <span className={isActive ? "text-black" : "text-white"}>{item.checkIn}</span>
+                <p
+                  className={`text-xs font-medium ${
+                    isActive ? "text-gray-700" : "text-gray-300"
+                  }`}
+                >
+                  Check in:{" "}
+                  <span className={isActive ? "text-black" : "text-white"}>
+                    {item.checkIn}
+                  </span>
                 </p>
-                <p className={`text-xs font-medium ${isActive ? "text-gray-700" : "text-gray-300"}`}>
-                  Check out: <span className={isActive ? "text-black" : "text-white"}>{item.checkOut}</span>
+                <p
+                  className={`text-xs font-medium ${
+                    isActive ? "text-gray-700" : "text-gray-300"
+                  }`}
+                >
+                  Check out:{" "}
+                  <span className={isActive ? "text-black" : "text-white"}>
+                    {item.checkOut}
+                  </span>
                 </p>
 
                 <div className="mt-2 text-xs flex justify-between items-center">
-                  <span className={isActive ? "text-black" : "text-white"}>{item.nights} Nights</span>
+                  <span className={isActive ? "text-black" : "text-white"}>
+                    {item.nights} Nights
+                  </span>
 
                   {item.status === "Confirmed" ? (
                     <span className="flex items-center gap-1 text-green-500">
@@ -314,10 +399,18 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
       <div className="px-4 mt-6 font-[Montserrat]">
         {/* Header */}
         <div className="flex justify-between items-center mb-2">
-          <h3 className={`${isActive ? "text-black" : "text-white"} font-semibold text-lg`}>
+          <h3
+            className={`${
+              isActive ? "text-black" : "text-white"
+            } font-semibold text-lg`}
+          >
             Activities
           </h3>
-          <button className={`${isActive ? "text-[#313DDF]" : "text-lime-400"} text-sm underline underline-offset-2`}>
+          <button
+            className={`${
+              isActive ? "text-[#313DDF]" : "text-lime-400"
+            } text-sm underline underline-offset-2`}
+          >
             See all
           </button>
         </div>
@@ -325,9 +418,7 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
         {/* Day Plan Header */}
         <div
           className={`rounded-2xl px-4 py-3 mb-4 ${
-            isActive
-              ? "bg-gray-200 text-black"
-              : "bg-[#2B2B2B] text-white"
+            isActive ? "bg-gray-200 text-black" : "bg-[#2B2B2B] text-white"
           }`}
         >
           <div className="flex justify-between items-center mb-3">
@@ -358,7 +449,9 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
                 key={i}
                 className={`flex items-stretch w-[70px] h-[65px] flex-shrink-0 rounded-xl overflow-hidden ${
                   d.active
-                    ? "bg-[#313DDF] text-white"
+                    ? ` ${
+                        isActive ? "bg-[#313DDF]" : "bg-lime-400 "
+                      }   text-white`
                     : d.monthOnly
                     ? "bg-gray-400 text-black"
                     : isActive
@@ -368,7 +461,11 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
               >
                 {/* Month (for active or divider item) */}
                 {d.month && !d.monthOnly && (
-                  <div className="flex items-center justify-center text-center px-[3px] bg-[#313DDF] text-white">
+                  <div
+                    className={`flex items-center justify-center text-center px-[3px] ${
+                      isActive ? "bg-[#313DDF]" : "bg-lime-400 "
+                    }  text-white`}
+                  >
                     <span className="text-[12px] font-semibold text-center transform -rotate-90 origin-mid-left">
                       {d.month}
                     </span>
@@ -387,8 +484,12 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
                 {/* Day + Date section */}
                 {!d.monthOnly && (
                   <div className="flex flex-col items-center justify-center flex-1 text-center px-1">
-                    <span className="text-[11px] font-medium leading-none">{d.label}</span>
-                    <span className="text-[15px] font-bold mt-[2px]">{d.day}</span>
+                    <span className="text-[11px] font-medium leading-none">
+                      {d.label}
+                    </span>
+                    <span className="text-[15px] font-bold mt-[2px]">
+                      {d.day}
+                    </span>
                   </div>
                 )}
               </div>
@@ -396,7 +497,10 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
 
             {/* Chevron icon to scroll */}
             <div className="ml-1 flex items-center justify-center w-[30px] h-[65px]">
-              <ChevronRight className={isActive ? "text-gray-600" : "text-gray-500"} size={20} />
+              <ChevronRight
+                className={isActive ? "text-gray-600" : "text-gray-500"}
+                size={20}
+              />
             </div>
           </div>
         </div>
@@ -405,7 +509,13 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
         <div className="mb-4">
           {/* Header Tags */}
           <div className="flex items-center gap-3 mb-4 text-xs font-medium">
-            <span className="bg-[#313DDF] text-white px-3 py-1 rounded-full">Day 1</span>
+            <span
+              className={` ${
+                isActive ? "bg-[#313DDF]" : "bg-lime-400 "
+              }  text-white px-3 py-1 rounded-full`}
+            >
+              Day 1
+            </span>
             <span
               className={`border px-3 py-1 rounded-full ${
                 isActive
@@ -415,7 +525,11 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
             >
               27.01.2025
             </span>
-            <span className={`${isActive ? "text-[#313DDF]" : "text-lime-400"} flex items-center gap-1`}>
+            <span
+              className={`${
+                isActive ? "text-[#313DDF]" : "text-lime-400"
+              } flex items-center gap-1`}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4"
@@ -435,7 +549,13 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
           </div>
 
           {/* Activity Cards */}
-          <div className={`border p-3 rounded-[8px] space-y-4 ${isActive ? "border-[#313DDF] bg-gray-100 text-black" : "border-[#D3F462] bg-[#2B2B2B] text-white"}`}>
+          <div
+            className={`border p-3 rounded-[8px] space-y-4 ${
+              isActive
+                ? "border-[#313DDF]  text-black"
+                : "border-[#D3F462]  text-white"
+            }`}
+          >
             {[
               {
                 title: "Senso-ji Temple & Nakamise Shopping Street Senso-ji",
@@ -475,13 +595,25 @@ export default function MobileDashboard({ userName = "Chhavi" }) {
                 />
                 {/* Right: Text */}
                 <div className="p-3 flex flex-col justify-between">
-                  <h4 className={`${isActive ? "text-black" : "text-white"} font-semibold text-sm`}>
+                  <h4
+                    className={`${
+                      isActive ? "text-black" : "text-white"
+                    } font-semibold text-sm`}
+                  >
                     {activity.title}
                   </h4>
-                  <p className={`${isActive ? "text-gray-700" : "text-gray-300"} text-xs`}>
+                  <p
+                    className={`${
+                      isActive ? "text-gray-700" : "text-gray-300"
+                    } text-xs`}
+                  >
                     {activity.time} · {activity.duration}
                   </p>
-                  <p className={`${isActive ? "text-gray-700" : "text-gray-300"} text-xs`}>
+                  <p
+                    className={`${
+                      isActive ? "text-gray-700" : "text-gray-300"
+                    } text-xs`}
+                  >
                     Pickup: {activity.pickup}
                   </p>
                 </div>
