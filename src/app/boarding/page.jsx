@@ -73,7 +73,9 @@ export default function TravelPlanner() {
               role="button"
               tabIndex={0}
               aria-pressed={isActive}
-              aria-label={!isActive ? "Switch to light mode" : "Switch to dark mode"}
+              aria-label={
+                !isActive ? "Switch to light mode" : "Switch to dark mode"
+              }
               className={`p-2 m-2 rounded-full w-[12%] absolute top-[-4.5rem] right-0 border-2 cursor-pointer ${
                 !isActive ? "border-gray-200" : "border-black"
               }`}
@@ -98,8 +100,6 @@ export default function TravelPlanner() {
                 >
                   <path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"></path>
                 </svg>
-
-                
               )}
             </div>
 
@@ -107,7 +107,10 @@ export default function TravelPlanner() {
               <h1 className="text-[23px] font-bold">
                 Plan Your Journey, Your Way!
               </h1>
-              <p className="text-sm mt-1" style={{ color: !isActive ? "#aaa" : "#666" }}>
+              <p
+                className="text-sm mt-1"
+                style={{ color: !isActive ? "#aaa" : "#666" }}
+              >
                 Let’s create your personalised travel experience
               </p>
             </header>
@@ -195,12 +198,19 @@ export default function TravelPlanner() {
                   ${
                     selectedGroup === label
                       ? "border-green-500 bg-gray-700"
-                      : isActive
+                      : !isActive
                       ? "border-transparent bg-[#333333]"
                       : "border-transparent bg-[#e5e5e5]"
                   }`}
                     aria-pressed={selectedGroup === label}
-                    style={{ color: selectedGroup === label ? "#fff" : !isActive ? "#ddd" : "#000" }}
+                    style={{
+                      color:
+                        selectedGroup === label
+                          ? "#fff"
+                          : !isActive
+                          ? "#ddd"
+                          : "#000",
+                    }}
                   >
                     <Icon className="w-4 h-4 mr-2" />
                     <span className="text-sm">{label}</span>
@@ -212,7 +222,7 @@ export default function TravelPlanner() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-[#3643fb] cursor-pointer  absolute bottom-[8rem] text-white font-semibold py-3 rounded-xl text-sm"
+              className="w-full bg-[#3643fb] cursor-pointer  absolute bottom-[9.5rem] text-white font-semibold py-3 rounded-xl text-sm"
             >
               Continue
             </button>
